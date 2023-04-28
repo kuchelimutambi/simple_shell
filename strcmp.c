@@ -1,4 +1,4 @@
-#include "header.h"
+#include "shell.h"
 /**
  * _strcmp - Compare if ths command have path or full path - 1
  * @tmp: command line
