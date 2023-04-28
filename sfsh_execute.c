@@ -27,7 +27,7 @@ int sfsh_execute(char **args, char *line)
 	}
 	size = (sizeof(builtins) / (sizeof(char *) * 2));
 	if (args[0] == NULL)
-	{'
+	{
 		free(dirs);
 		return (1);
 	}
