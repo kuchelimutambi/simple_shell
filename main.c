@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * main - entry point of the shell
  * @ac: arg count
