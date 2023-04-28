@@ -52,7 +52,7 @@ void sfsh_search_path(char **args, char **dirs)
 	struct dirent *p_file;
 	int i;
 
-	for (i = 0; dirs[i] != '\0'; i++)
+	for (i = 0; dirs[i] != NULL; i++)
 	{
 		p_dir = opendir(dirs[i]);
 		while ((p_file = readdir(p_dir)) != NULL)
