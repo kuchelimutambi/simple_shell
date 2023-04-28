@@ -26,8 +26,8 @@ int sfsh_execute(char **args, char *line)
 		exit(101);
 	}
 	size = (sizeof(builtins) / (sizeof(char *) * 2));
-	if (args[0] == '\0')
-	{
+	if (args[0] == NULL)
+	{'
 		free(dirs);
 		return (1);
 	}
@@ -72,7 +72,7 @@ void check_environ(char *path, char temp[], char **dirs)
 	path += 5;
 	i = 0;
 	path = strtok(path, ":");
-	while (path != '\0')
+	while (path != NULL)
 	{
 		dirs[i] = path;
 		i++;
@@ -80,4 +80,3 @@ void check_environ(char *path, char temp[], char **dirs)
 	}
 	dirs[i] = NULL;
 }
-Footer
